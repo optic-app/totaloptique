@@ -16632,19 +16632,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
 function downloadAPK() {
-    // Créer un lien de téléchargement
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://raw.githubusercontent.com/monEspasse/opticien/main/optic-app.apk';
-
+    downloadLink.href = 'optic-app.apk'; 
+    downloadLink.setAttribute('download', 'optic-app.apk');
     
-    // Déclencher le téléchargement
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
     
-    // Fermer le modal après téléchargement
     closeDownloadModal();
-    
 }
 
         // Fermer le modal en cliquant à l'extérieur
