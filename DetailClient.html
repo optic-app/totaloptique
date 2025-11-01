@@ -3491,7 +3491,7 @@ function confirmCall() {
     hideModal('callConfirmationModal');
     
     // Planifier l'ouverture automatique de la consigne
-    setTimeout(openAutoCallLog, CALL_CONFIG.autoLogDelay);
+    //setTimeout(openAutoCallLog, CALL_CONFIG.autoLogDelay);
 }
 
 // Annuler l'appel
@@ -3628,7 +3628,7 @@ function initializeCallSystem() {
     }
     
     // Vérifier les appels en attente au chargement de la page
-    setTimeout(openAutoCallLog, 1000);
+    //setTimeout(openAutoCallLog, 1000);
     
     // Configurer la fermeture des modales en cliquant à l'extérieur
     setupModalCloseHandlers();
